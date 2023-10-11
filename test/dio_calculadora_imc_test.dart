@@ -24,13 +24,13 @@ void main() {
   });
 
   group('Calcular IMC - Magreza Moderada', () {
-    var valoresMagrezaGrave = {
+    var valoresMagrezaModerada = {
       {'nome': 'Anônimo', 'peso': 41, 'altura': 1.60}: 'Magreza Moderada',
       {'nome': 'Anônimo', 'peso': 48, 'altura': 1.70}: 'Magreza Moderada',
       {'nome': 'Anônimo', 'peso': 55, 'altura': 1.80}: 'Magreza Moderada',
     };
 
-    valoresMagrezaGrave.forEach((values, expected) {
+    valoresMagrezaModerada.forEach((values, expected) {
       Pessoa pessoaTeste = Pessoa(
           values['nome'].toString(),
           double.parse(values['peso'].toString()),
@@ -45,13 +45,13 @@ void main() {
   });
 
   group('Calcular IMC - Magreza Leve', () {
-    var valoresMagrezaGrave = {
+    var valoresMagrezaLeve = {
       {'nome': 'Anônimo', 'peso': 44, 'altura': 1.60}: 'Magreza Leve',
       {'nome': 'Anônimo', 'peso': 52, 'altura': 1.70}: 'Magreza Leve',
       {'nome': 'Anônimo', 'peso': 59, 'altura': 1.80}: 'Magreza Leve',
     };
 
-    valoresMagrezaGrave.forEach((values, expected) {
+    valoresMagrezaLeve.forEach((values, expected) {
       Pessoa pessoaTeste = Pessoa(
           values['nome'].toString(),
           double.parse(values['peso'].toString()),
@@ -66,13 +66,13 @@ void main() {
   });
 
   group('Calcular IMC - Saudável', () {
-    var valoresMagrezaGrave = {
+    var valoresSaudavel = {
       {'nome': 'Anônimo', 'peso': 60, 'altura': 1.80}: 'Saudável',
       {'nome': 'Anônimo', 'peso': 60, 'altura': 1.70}: 'Saudável',
       {'nome': 'Anônimo', 'peso': 60, 'altura': 1.60}: 'Saudável',
     };
 
-    valoresMagrezaGrave.forEach((values, expected) {
+    valoresSaudavel.forEach((values, expected) {
       Pessoa pessoaTeste = Pessoa(
           values['nome'].toString(),
           double.parse(values['peso'].toString()),
@@ -87,13 +87,13 @@ void main() {
   });
 
   group('Calcular IMC - Sobrepeso', () {
-    var valoresMagrezaGrave = {
+    var valoresSobrepeso = {
       {'nome': 'Anônimo', 'peso': 82, 'altura': 1.80}: 'Sobrepeso',
       {'nome': 'Anônimo', 'peso': 82, 'altura': 1.70}: 'Sobrepeso',
       {'nome': 'Anônimo', 'peso': 76, 'altura': 1.60}: 'Sobrepeso',
     };
 
-    valoresMagrezaGrave.forEach((values, expected) {
+    valoresSobrepeso.forEach((values, expected) {
       Pessoa pessoaTeste = Pessoa(
           values['nome'].toString(),
           double.parse(values['peso'].toString()),
@@ -108,13 +108,13 @@ void main() {
   });
 
   group('Calcular IMC - Obesidade Grau 1', () {
-    var valoresMagrezaGrave = {
+    var valoresObesidadeGrau1 = {
       {'nome': 'Anônimo', 'peso': 113, 'altura': 1.80}: 'Obesidade Grau 1',
       {'nome': 'Anônimo', 'peso': 100, 'altura': 1.70}: 'Obesidade Grau 1',
       {'nome': 'Anônimo', 'peso': 77, 'altura': 1.60}: 'Obesidade Grau 1',
     };
 
-    valoresMagrezaGrave.forEach((values, expected) {
+    valoresObesidadeGrau1.forEach((values, expected) {
       Pessoa pessoaTeste = Pessoa(
           values['nome'].toString(),
           double.parse(values['peso'].toString()),
@@ -129,7 +129,7 @@ void main() {
   });
 
   group('Calcular IMC - Obesidade Grau 2 (severa)', () {
-    var valoresMagrezaGrave = {
+    var valoresObesidadeGrau2 = {
       {'nome': 'Anônimo', 'peso': 129, 'altura': 1.80}:
           'Obesidade Grau 2 (severa)',
       {'nome': 'Anônimo', 'peso': 102, 'altura': 1.70}:
@@ -138,7 +138,7 @@ void main() {
           'Obesidade Grau 2 (severa)',
     };
 
-    valoresMagrezaGrave.forEach((values, expected) {
+    valoresObesidadeGrau2.forEach((values, expected) {
       Pessoa pessoaTeste = Pessoa(
           values['nome'].toString(),
           double.parse(values['peso'].toString()),
@@ -153,7 +153,7 @@ void main() {
   });
 
   group('Calcular IMC - Obesidade Grau 3 (mórbida)', () {
-    var valoresMagrezaGrave = {
+    var valoresObesidadeGrau3 = {
       {'nome': 'Anônimo', 'peso': 131, 'altura': 1.80}:
           'Obesidade Grau 3 (mórbida)',
       {'nome': 'Anônimo', 'peso': 116, 'altura': 1.70}:
@@ -162,7 +162,7 @@ void main() {
           'Obesidade Grau 3 (mórbida)',
     };
 
-    valoresMagrezaGrave.forEach((values, expected) {
+    valoresObesidadeGrau3.forEach((values, expected) {
       Pessoa pessoaTeste = Pessoa(
           values['nome'].toString(),
           double.parse(values['peso'].toString()),
